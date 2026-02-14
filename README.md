@@ -37,13 +37,9 @@ Test results:
 - False positives: 41
 - Reviews: 2,624
 
-## Technologies
+## Tools
 Python, scikit-learn, Pandas, NumPy, Matplotlib
 
-## Repository Structure
-- notebooks/: modeling workflow
-- images/: visualizations
-- requirements.txt: dependencies
 
 ## Author
 Cyril Udeani
