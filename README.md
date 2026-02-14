@@ -1,8 +1,23 @@
 # Cost-Sensitive Fraud Detection System
 
-This project develops a machine learning model to detect fraudulent financial transactions under extreme class imbalance using cost-sensitive modeling.
+## Overview
+This project develops a machine learning system for detecting fraudulent financial transactions under extreme class imbalance using cost-sensitive modeling.
 
-The model minimizes expected financial loss by optimizing classification thresholds instead of maximizing accuracy.
+Instead of optimizing accuracy, the model minimizes expected financial loss by assigning different costs to false negatives and false positives.
+
+The final Random Forest model reduced expected fraud-related cost by 87% compared to baseline.
+
+## Dataset
+Kaggle Credit Card Fraud Detection Dataset  
+284,807 transactions  
+Fraud rate ≈ 0.17%
+
+## Modeling Approach
+- Stratified train / validation / test split
+- Logistic Regression baseline
+- Random Forest model
+- Cost-sensitive threshold optimization
+- Operational decision policy simulation
 
 ## Results
 
@@ -14,14 +29,21 @@ The model minimizes expected financial loss by optimizing classification thresho
 
 Cost reduction: 87%
 
-## Key Features
-- Cost-sensitive learning
-- Threshold optimization
-- Random Forest modeling
-- Operational decision policy simulation
+## Operational Policy
+Approve / Review / Block decision framework implemented.
 
-## Dataset
-Kaggle Credit Card Fraud Detection dataset.
+Test results:
+- False negatives: 5
+- False positives: 41
+- Reviews: 2,624
 
-## Notebook
-See fraud_detection_cost_sensitive_modeling.ipynb
+## Technologies
+Python, scikit-learn, Pandas, NumPy, Matplotlib
+
+## Repository Structure
+- notebooks/: modeling workflow
+- images/: visualizations
+- requirements.txt: dependencies
+
+## Author
+Cyril Udeani
